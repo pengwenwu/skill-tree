@@ -1,2 +1,42 @@
-# TODO
-personal-todo
+# TODO-2018
+- [ ] laravel学习使用
+    - [x] vagrant + homestead搭建linux环境 (已完成)
+    - [ ] 学习框架(未完成)
+- [x] composer (已完成2018-05-27 21:42:00)
+- [x] docker---阅读《Docker — 从入门到实践》(已完成)
+    - [x] 使用laradock跑起一个项目(已完成 2018.6.10 23:00:00)
+    - [x] docker本地api项目运行（已熟练）
+- [x] websocket使用（已完成）
+    - [x] 客户端使用(已完成2018.6.18 22:30:30)
+    - [x] 服务端使用(workerman文档阅读已完成2018.6.27)
+- [ ] CI框架源码分析（进行中）
+    - [x] 入口文件index.php（完成时间2018-07-02）
+    - [x] 核心文件CodeIgniter（完成时间2018-07-13）
+    - [x] 全局函数库文件Common.php（完成时间2018.7.18 23:43）
+    - [ ] mysql怎么封装
+    - [ ] 路由怎么实现
+    - [ ] MVC怎么实现
+    - [ ] 自动加载
+    - [ ] 缓存怎么封装
+- [x] php-fpm,fastcgi模式（完成时间2018.7.22 17:39）
+- [ ] mq消息
+    - [x] RabbitMq Server搭建（完成时间：2018.8.6）
+    - [x] php-amqplib库文档实践（完成时间：2018.9.4）
+    - [ ] 熟悉服务端配置 
+- [ ] nginx负载匀衡、代理转发
+- [ ] redis
+- [ ] mysql优化
+- [ ] swoole
+- [ ] swoft框架（基于swoole扩展）
+- [ ] php多线程、协程
+- [ ] xdebug
+- [ ] OpenApi
+- [ ] sphinx搭建使用（coreseek）
+- [ ] Golang
+- [ ] 设计模式
+- [ ] 依赖注入
+- [ ] 单元测试
+- [ ] vuex
+- [ ] 网关kong的了解
+- [ ] 微服务，SOA
+- [ ] 区块链
