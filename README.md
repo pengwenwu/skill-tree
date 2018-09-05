@@ -27,6 +27,7 @@
 ## RabbitMq
 - [centos7安装RabbitMq服务端](./RabbitMq/centos7安装RabbitMq服务端.md)
 - [RabbitMq客户端 - php-amqplib库](./RabbitMq/RabbitMq客户端%20-%20php-amqplib库.md)
+- [RabbitMq服务端web ui配置.md](./RabbitMq/RabbitMq服务端web%20ui配置.md)
 
 ## WebSocket
 - [WebSocket入门](./WebSocket/WebSocket入门.md)
