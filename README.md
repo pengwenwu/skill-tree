@@ -24,6 +24,7 @@
 - [CI框架3.x源码阅读笔记二之核心文件CodeIgniter.php](./Framework/CodeIgniter/CI框架3.x源码阅读笔记二之核心文件CodeIgniter.php.md)
 - [CI框架3.x源码阅读笔记三之全局函数库文件Common.php文件](./Framework/CodeIgniter/CI框架3.x源码阅读笔记三之全局函数库文件Common.php文件.md)
 - [CI框架3.x源码阅读笔记四之基准点组件Benchmark.php](./Framework/CodeIgniter/CI框架3.x源码阅读笔记四之基准点组件Benchmark.php.md)
+- [CI框架3.x源码阅读笔记五之钩子类文件Hook.php](./Framework/CodeIgniter/CI框架3.x源码阅读笔记五之钩子类文件Hook.php.md)
 
 ## RabbitMq
 - [centos7安装RabbitMq服务端](./RabbitMq/centos7安装RabbitMq服务端.md)
