@@ -32,4 +32,8 @@
 
 ## 框架核心
 ### 生命周期
+#### HTTP Server
+请求生命周期的流程示意图：  
+![httpserver生命周期](http://pic.pwwtest.com/httpserver%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F_20180930163416.png)
+  
 
