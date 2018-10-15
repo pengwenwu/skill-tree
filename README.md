@@ -64,3 +64,7 @@
 
 ## Nginx
 - [Nginx教程](./Nginx/Nginx教程.md)
+
+## Redis
+- [centos7源码安装redis服务端](./Redis/centos7源码安装redis服务端.md)
+- [centos7安装phpredis客户端](./Redis/centos7安装phpredis客户端.md)
