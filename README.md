@@ -46,7 +46,7 @@
 ## Redis
 - [centos7源码安装redis服务端](./Redis/centos7源码安装redis服务端.md)
 - [centos7安装phpredis客户端](./Redis/centos7安装phpredis客户端.md)
-- [01.redis基础结构](./Redis/01.redis基础结构.md)
+- [01.redis命令](./Redis/01.redis命令.md)
 
 ## Swoole
 - [Swoole入门](./Swoole/Swoole入门.md)
