@@ -55,7 +55,7 @@ cd php-7.2.8
 --with-freetype-dir \
 --enable-opcache
 
-make && install
+make && make install
 ```
 
 ### 配置php
