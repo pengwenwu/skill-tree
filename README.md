@@ -19,6 +19,9 @@
 - [git reset 和 revert 的区别和使用](./Git/git%20reset%20和%20revert%20的区别和使用.md)
 - [git子模块](./Git/git子模块.md)
 
+## Golang
+- [语言基础](./Golang/01.语言基础.md)
+
 ## Hexo
 - [hexo + github搭建个人博客教程](./Hexo/hexo%20+%20github搭建个人博客教程.md)
 - [hexo常用命令](./Hexo/hexo常用命令.md)
