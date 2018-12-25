@@ -26,6 +26,9 @@
 - [hexo + github搭建个人博客教程](./Hexo/hexo%20+%20github搭建个人博客教程.md)
 - [hexo常用命令](./Hexo/hexo常用命令.md)
 
+## HTTP
+- [cookie中的domain设置](./HTTP/cookie中的domain设置.md)
+
 ## Linux
 - [centos7编译安装php7和nginx](./Linux/centos7编译安装php7和nginx.md)
 - [Linux常用命令](./Linux/Linux常用命令.md)
