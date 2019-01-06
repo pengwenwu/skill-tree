@@ -23,12 +23,12 @@
 - [git子模块](./Git/git子模块.md)
 
 ## Golang
-- [语言基础](./Golang/01.语言基础.md)
-- [流程和函数](./Golang/02.流程和函数.md)
-- [struct类型](./Golang/03.struct类型.md)
-- [面向对象](./Golang/04.面向对象.md)
-- [interface](./Golang/05.interface.md)
-- [并发](./Golang/06.并发.md)
+- [01.语言基础](./Golang/01.语言基础.md)
+- [02.流程和函数](./Golang/02.流程和函数.md)
+- [03.struct类型](./Golang/03.struct类型.md)
+- [04.面向对象](./Golang/04.面向对象.md)
+- [05.interface](./Golang/05.interface.md)
+- [06.并发](./Golang/06.并发.md)
 
 ## Hexo
 - [hexo + github搭建个人博客教程](./Hexo/hexo%20+%20github搭建个人博客教程.md)
@@ -61,6 +61,8 @@
 - [centos7源码安装redis服务端](./Redis/centos7源码安装redis服务端.md)
 - [centos7安装phpredis客户端](./Redis/centos7安装phpredis客户端.md)
 - [01.redis命令](./Redis/01.redis命令.md)
+- [02.数据持久化](./Redis/02.数据持久化.md)
+- [03.应用场景](./Redis/03.应用场景.md)
 
 ## Swoole
 - [Swoole入门](./Swoole/Swoole入门.md)
