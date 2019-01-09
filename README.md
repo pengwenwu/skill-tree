@@ -41,6 +41,10 @@
 - [centos7编译安装php7和nginx](./Linux/centos7编译安装php7和nginx.md)
 - [Linux常用命令](./Linux/Linux常用命令.md)
 
+## MySQL
+- [mysql优化（一）](./MySQL/mysql优化（一）.md)
+- [mysql优化（二）](./MySQL/mysql优化（二）.md)
+
 ## Nginx
 - [Nginx教程](./Nginx/Nginx教程.md)
 
