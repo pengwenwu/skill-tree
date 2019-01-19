@@ -1,4 +1,5 @@
-> 安装教程：https://www.cnblogs.com/xdp-gacl/p/3498271.html
+> 安装教程：https://www.cnblogs.com/xdp-gacl/p/3498271.html  
+> Maven 教程:http://www.runoob.com/maven/maven-tutorial.html
 
 ## Maven 项目文件结构
 - `src/main/java` - 存放项目.java文件
