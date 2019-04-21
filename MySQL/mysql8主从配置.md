@@ -99,3 +99,5 @@ show slave status\G;
            Replicate_Do_Table:
            ...
 ```
+
+> 参考文档：https://www.jianshu.com/p/b0cf461451fb
