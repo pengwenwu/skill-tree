@@ -3,6 +3,22 @@
 docker pull mysql:5.7
 ```
 
+配置文件  
+```bash
+[mysqld]
+user=mysql
+character-set-server=utf8
+default_authentication_plugin=mysql_native_password
+
+log-bin=mysql-bin # 开启 binlog
+binlog-format=ROW # 选择 ROW 模式
+server_id=1 # 配置 MySQL replaction 需要定义，不要和 canal 的 slaveId 重复
+[client]
+default-character-set=utf8
+[mysql]
+default-character-set=utf8
+```
+
 启动脚本  
 
 参数含义：  
