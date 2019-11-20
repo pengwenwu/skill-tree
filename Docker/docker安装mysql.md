@@ -32,11 +32,12 @@ default-character-set=utf8
 ```bash
 #!bin/bash
 
-docker run --name my-mysql \
+docker run -d \
+--name my-mysql \
 -e MYSQL_ROOT_PASSWORD=123456 \
 -p 3306:3306 \
 -v ~/my_docker/mysql:/var/lib/mysql \
 -v ~/my_docker/conf/mysql/my.cnf:/etc/my.cnf \
--d mysql:5.7 \
---restart=always
+--restart=always \
+mysql:5.7
 ```
