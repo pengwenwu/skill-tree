@@ -17,12 +17,12 @@ docker pull redis
 ```bash
 #!bin/bash
 
-docker run \
+docker run -d \
 --name my-redis \
 -p 6379:6379 \
 -v ~/my_docker/redis/data:/data \
 -v ~/my_docker/conf/redis/redis.conf:/etc/redis/redis.conf \
--d redis redis-server /etc/redis/redis.conf \
---appendonly yes \
---restart=always
+--restart=always \
+redis redis-server /etc/redis/redis.conf \
+--appendonly yes
 ```
