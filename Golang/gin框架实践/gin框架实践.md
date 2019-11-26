@@ -27,7 +27,7 @@
 - cmd：放main.go和配置文件, 作为启动入口
 - config：放配置文件对应的golang struct, 使用的是toml  
 - dao：data access object, 数据库访问方法, redis, memcache访问方法, 还有一些RPC调用也放在这里面
-- server：做一些初始化工作，主要是提供协议转换, 聚合. 逻辑还是再service层做  
+- server：做一些初始化工作，主要是提供协议转换, 聚合. 逻辑还是再service层做（将参数校验也下沉到service层去做）  
 - service：业务逻辑处理  
 
 ## 应用
@@ -62,3 +62,11 @@ router.StaticFS("/more_static", http.Dir("my_file_system"))
 // 获取相对路径下的文件
 router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 ```
+
+## 需要处理的问题
+- 结构分层
+- 中间件鉴权
+- 统一返回格式
+- 错误异常处理
+- 状态码处理
+- 支持不定查询字段
