@@ -70,3 +70,5 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - 错误异常处理
 - 状态码处理
 - 支持不定查询字段
+- 主从分库
+- 多数据库连接

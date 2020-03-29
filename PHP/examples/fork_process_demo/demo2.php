@@ -15,3 +15,4 @@ for ( $i = 1; $i <= 3; $i++ ) {
         exit;
     }
 }
+echo '@父进程'.PHP_EOL;
