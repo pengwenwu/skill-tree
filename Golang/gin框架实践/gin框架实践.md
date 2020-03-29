@@ -64,7 +64,14 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 ```
 
 ## 需要处理的问题
-- 结构分层
+- 结构分层(app/admin/main/credit/http/jury)
+  - api
+  - service
+  - model
+    - param
+    - model
+    - item_model
+    - common
 - 中间件鉴权
 - 统一返回格式
 - 错误异常处理
