@@ -72,6 +72,10 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
     - model
     - item_model
     - common
+- 如何接收复杂参数？
+  - 如果用传统form-data方式，go服务处理
+  - 查了一下，java默认接收方式也是json
+  - 所以直接统一使用json提交，但是无法给默认参数，只能在实例化的时候给默认参数
 - 中间件鉴权
 - 统一返回格式
 - 错误异常处理
