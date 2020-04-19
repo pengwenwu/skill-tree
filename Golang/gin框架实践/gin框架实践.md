@@ -76,6 +76,7 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
   - 如果用传统form-data方式，go服务处理
   - 查了一下，java默认接收方式也是json，通过requestbdy获取
   - 所以直接统一使用json提交，但是无法给默认参数，只能在实例化的时候给默认参数
+- 日志处理
 - 中间件鉴权
 - 统一返回格式
 - 错误异常处理
