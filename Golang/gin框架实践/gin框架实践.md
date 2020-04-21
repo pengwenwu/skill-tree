@@ -64,23 +64,18 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 ```
 
 ## 需要处理的问题
-- 结构分层(app/admin/main/credit/http/jury)
-  - api
-  - service
-  - model
-    - param
-    - model
-    - item_model
-    - common
-- 如何接收复杂参数？
+- [x] 项目目录划分
+- [x] 如何接收复杂参数？
   - 如果用传统form-data方式，go服务处理
   - 查了一下，java默认接收方式也是json，通过requestbdy获取
   - 所以直接统一使用json提交，但是无法给默认参数，只能在实例化的时候给默认参数
-- 日志处理
-- 中间件鉴权
-- 统一返回格式
-- 错误异常处理
-- 状态码处理
-- 支持不定查询字段
-- 主从分库
-- 多数据库连接
+- [x] 访问日志处理
+  - [x] 日志切割
+- [x] 统一返回格式
+- [x] 状态码处理
+- [x] 支持不定查询字段
+- [ ] 业务日志处理
+- [ ] 中间件鉴权ß
+- [ ] 错误异常处理
+- [ ] 多数据库连接
+- [ ] 主从分库
