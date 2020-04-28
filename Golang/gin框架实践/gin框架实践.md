@@ -79,3 +79,4 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [ ] 业务日志处理
 - [ ] 错误异常处理
 - [ ] 主从分库
+- [ ] mq消息处理
