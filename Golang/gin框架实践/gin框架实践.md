@@ -78,6 +78,7 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [x] 中间件鉴权
 - [x] 多数据库连接
   - [x] 主从分库 
+  - [x] 跨库可以通过tablename指定库名
   - [ ] 未测试出连接池的开启的效果
 - [x] 区分测试生产环境配置
   - [x] viper
