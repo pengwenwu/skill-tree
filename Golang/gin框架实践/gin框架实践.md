@@ -74,7 +74,10 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
     - [x] 日志切割
 - [x] 统一返回格式
 - [x] 状态码处理
-- [x] 支持不定查询字段
+- [ ] mysql业务
+  - [x] 支持不定查询字段
+  - [x] 获取上一次创建id
+  - [ ] 批量插入
 - [x] 中间件鉴权
 - [x] 多数据库连接
   - [x] 主从分库 
