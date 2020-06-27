@@ -90,6 +90,7 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [x] 数据库迁移migration
   - [x] golang-migrate
   - [ ] 无法多数据库区公用一个版本
+- [ ] rabbitmq封装
 - [ ] 重启
 - [ ] docker部署
 - [ ] 业务日志处理
