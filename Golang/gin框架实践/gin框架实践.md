@@ -76,6 +76,7 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [x] 状态码处理
 - [ ] mysql业务
   - [x] 支持不定查询字段
+    - [ ] 查询接口是map\[string\]interface{}是无法使用的
   - [x] 获取上一次创建id
   - [ ] 批量插入
   - [ ] 无法合并参数默认值，比如添加item初始状态（不支持）
