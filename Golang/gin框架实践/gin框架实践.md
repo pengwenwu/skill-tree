@@ -79,6 +79,7 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
   - [x] 获取上一次创建id
   - [ ] 批量插入
   - [ ] 无法合并参数默认值，比如添加item初始状态（不支持）
+  - [ ] 协程并发读读取多个数据库
 - [x] 中间件鉴权
 - [x] 多数据库连接
   - [x] 主从分库 
