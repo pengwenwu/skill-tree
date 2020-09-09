@@ -92,9 +92,13 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [x] 数据库迁移migration
   - [x] golang-migrate
   - [ ] 无法多数据库区公用一个版本
-- [ ] rabbitmq封装
+- [x] rabbitmq封装
+- [ ] mq消息处理
+  - [ ] SyncSkuInsert（批量处理）
 - [ ] 重启
 - [ ] docker部署
 - [ ] 业务日志处理
 - [ ] 错误异常处理
-- [ ] mq消息处理
+- [ ] 原有bug/待优化
+  - [ ] 查询商品列表接口，只返回item_id，会导致查询某一个sku的条码，返回了全部sku
+  - [ ] mq消息发送重复（由于在dao层处理发送消息，会出现同时调用多个dao层），比如删除商品，即发送了同步item消息，也发送了同步sku消息，回调处理方法差不多
