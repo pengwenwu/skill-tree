@@ -81,8 +81,8 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
   - [x] 批量插入
   - [x] 无法合并参数默认值，比如添加item初始状态（不支持，可以通过初始化方法处理）
   - [ ] 未获取数据的状态码处理
-  - [ ] 协程并发读读取多个数据库
-  - [ ] 批量更新
+  - [x] 协程并发读读取多个数据库
+  - [x] 批量更新(不支持类似CI那种updateBatch方法)
 - [x] 中间件鉴权
 - [x] 多数据库连接
   - [x] 主从分库 
@@ -95,12 +95,20 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
   - [x] golang-migrate
   - [ ] 无法多数据库区公用一个版本
 - [x] rabbitmq封装
-- [ ] mq消息处理
-  - [ ] SyncSkuInsert（批量处理）
-- [ ] 重启
-- [ ] docker部署
-- [ ] 业务日志处理
+  - [x] 消费者处理
+  - [x] 生产者处理
+  - [x] 消息绑定处理
+- [x] mq消息处理
+  - [x] SyncSkuInsert（批量处理）
+  - [x] SyncSkuUpdate
+  - [x] SyncIemInsert
+  - [x] SyncIemUpdate
 - [ ] 错误异常处理
-- [ ] 原有bug/待优化
-  - [ ] 查询商品列表接口，只返回item_id，会导致查询某一个sku的条码，返回了全部sku
-  - [ ] mq消息发送重复（由于在dao层处理发送消息，会出现同时调用多个dao层），比如删除商品，即发送了同步item消息，也发送了同步sku消息，回调处理方法差不多
+- [ ] 业务日志处理
+- [ ] docker部署
+- [ ] 重启(优雅关闭服务)
+- [x] 原有bug/待优化
+  - [x] 查询商品列表接口，只返回item_id，会导致查询某一个sku的条码，返回了全部sku
+  - [x] mq消息发送重复（由于在dao层处理发送消息，会出现同时调用多个dao层），比如删除商品，即发送了同步item消息，也发送了同步sku消息，回调处理方法差不多
+- [ ] 多版本
+- [ ] 协程mq消费者如何优雅退出
