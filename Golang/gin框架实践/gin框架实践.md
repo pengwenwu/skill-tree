@@ -71,13 +71,13 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
   - 所以直接统一使用json提交，但是无法给默认参数，只能在实例化的时候给默认参数
 - [x] 统一返回格式
 - [x] 状态码处理
-- [ ] mysql业务
+- [x] mysql业务
   - [x] 支持不定查询字段
     - [x] 查询接口是map\[string\]interface{}是无法使用的
   - [x] 获取上一次创建id
   - [x] 批量插入
   - [x] 无法合并参数默认值，比如添加item初始状态（不支持，可以通过初始化方法处理）
-  - [ ] 未获取数据的状态码处理
+  - [x] 未获取数据的状态码处理
   - [x] 协程并发读读取多个数据库
   - [x] 批量更新(不支持类似CI那种updateBatch方法)
 - [x] 中间件鉴权
@@ -106,7 +106,6 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
     - [x] 日志切割（按文件大小lumberjack，日期file-rotatelogs）
   - [x] 业务日志
     - [x] 区分错误级别
-- [ ] 参数bind错误统一处理
 - [ ] docker部署
 - [ ] 重启(优雅关闭服务)
 - [x] 原有bug/待优化
@@ -115,3 +114,5 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [ ] 多版本
 - [ ] 协程mq消费者如何优雅退出
 - [ ] 入口文件调整
+- [ ] qps性能对比swoft
+- [x] makefile构建
