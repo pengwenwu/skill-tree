@@ -107,7 +107,8 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
   - [x] 业务日志
     - [x] 区分错误级别
 - [ ] docker部署
-- [ ] 重启(优雅关闭服务)
+- [x] 平滑重启(优雅关闭服务endless)
+  - [x] 经测试，平滑重启无法解决mq消费者执行到一半的问题。同理，php里也有这个问题，一般可以通过mq的ack机制去做处理
 - [x] 原有bug/待优化
   - [x] 查询商品列表接口，只返回item_id，会导致查询某一个sku的条码，返回了全部sku
   - [x] mq消息发送重复（由于在dao层处理发送消息，会出现同时调用多个dao层），比如删除商品，即发送了同步item消息，也发送了同步sku消息，回调处理方法差不多
