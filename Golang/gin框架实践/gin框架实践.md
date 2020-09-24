@@ -63,7 +63,7 @@ router.StaticFS("/more_static", http.Dir("my_file_system"))
 router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 ```
 
-## 需要处理的问题
+## 功能说明
 - [x] 项目目录划分
 - [x] 如何接收复杂参数？
   - 如果用传统form-data方式，go无法处理
@@ -72,7 +72,7 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [x] 统一返回格式
 - [x] 状态码处理
 - [x] mysql业务
-  - [x] 支持不定查询字段
+  - [x] 支持不定查询字段(已废弃)
     - [x] 查询接口是map\[string\]interface{}是无法使用的
   - [x] 获取上一次创建id
   - [x] 批量插入
@@ -115,5 +115,54 @@ router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 - [ ] 多版本
 - [ ] 协程mq消费者如何优雅退出
 - [ ] 入口文件调整
-- [ ] qps性能对比swoft
+- [x] qps性能对比swoft
 - [x] makefile构建
+
+
+## gin和swoft框架性能对比
+1. 单个商品信息查询，所有关联表
+
+| 框架 | 单次获取商品详情 | ab压测获取详情 | 单次添加商品 | ab压测添加商品 |
+| - | - | - | - | - |
+| swoft| 20ms | qps800左右，性能急剧下滑到110ms左右| 160ms | qps150左右，响应时间上升到350ms|
+|gin | 15ms | qps920左右，响应时间108ms | 20ms | qps560左右，响应时间123ms|
+
+ab压测报告：  
+**swoft（获取商品详情）**  
+1000请求并发10，响应时间12ms左右，qps427  
+![](http://pic.pwwtest.com/rdo21y.png)  
+
+1000请求并发100已经有7%的失败率，响应时间也升到110ms左右，qps858  
+![](http://pic.pwwtest.com/0Mn6MK.png)
+
+1000请求并发70有1%的失败率，响应时间升到85ms左右,qps803
+
+下面是50并发的记录  
+![](http://pic.pwwtest.com/NPxnOH.png)
+
+**swoft添加商品**  
+1000请求并发10，响应时间170ms，qps57
+![](http://pic.pwwtest.com/M5qMDW.png)
+
+1000请求并发50，响应时间340ms，qps146
+![](http://pic.pwwtest.com/Iw1Oey.png)
+
+1000请求并发70，响应时间460ms，qps150
+![](http://pic.pwwtest.com/m3swD1.png)
+
+**gin查看商品**  
+1000请求80并发，响应时间97ms，qps820
+![](http://pic.pwwtest.com/OO2iqw.png)
+
+10000请求100并发，响应时间108ms，qps920
+![](http://pic.pwwtest.com/0fqqGu.png)
+
+10000请求1000并发，响应时间1392ms，qps710
+![](http://pic.pwwtest.com/fuXrbc.png)
+
+**gin添加商品**
+1000请求70并发，响应时间123ms，qps565
+![](http://pic.pwwtest.com/UCqIue.png)
+
+1000请求100并发，本地请求响应时间560，qps180。请求测试机，数据库没扛住
+![](http://pic.pwwtest.com/VgUp7r.png)
